@@ -1,36 +1,41 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Diego from "../page/Diego";
-import Alexandre from "../page/Alexandre";
-import Igor from "../page/Igor";
-import Jefferson from "../page/Jefferson";
-import Misael from "../page/Misael";
-import Patrick from "../page/Patrick";
+import DiegoCardSkill from "../page/Diego";
+import CardSkillHome from "../page/Home";
+import AlexandreCardSkill from "../page/Alexandre";
+import PatrickCardSkill from '../page/Patrick'
+import JeffersonCardSkill from "../page/Jefferson";
+import MisaelCardSkill from "../page/Misael";
+import IgorCardSkill from "../page/Igor";
 
 
 const router = createBrowserRouter([
     {
+        path: '/',
+        element: <CardSkillHome />
+    },
+    {
         path: '/diego',
-        element: <Diego />
+        element: <DiegoCardSkill />
     },
     {
         path: '/alexandre',
-        element: <Alexandre />
+        element: <AlexandreCardSkill />
     },
     {
         path: '/patrick',
-        element: <Patrick />
+        element: <PatrickCardSkill />
     },
     {
         path: '/jefferson',
-        element: <Jefferson />
+        element: <JeffersonCardSkill />
     },
     {
         path: '/misael',
-        element: <Misael />
+        element: <MisaelCardSkill />
     },
     {
         path: '/igor',
-        element: <Igor />
+        element: <IgorCardSkill />
     },
 
 ])
