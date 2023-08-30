@@ -4,18 +4,13 @@ import { Grid } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { NavBarStlyed } from './NavBarStyled';
 
-interface NavBarProps {
-  title: string;
-}
 
-
-const NavBar: React.FC<NavBarProps> = ({ title }) => {
+const NavBar: React.FC = () => {
 
   return (
     <>
       <Grid xs={12} container>
         <NavBarStlyed >
-          <h1>{title}</h1>
           <ul className='bodyNav'>
             <li >
               {
