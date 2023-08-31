@@ -1,31 +1,31 @@
+
 import { navigation } from '../../config/navigation';
 import { } from '../../index.css'
 import { Grid } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { NavBarStlyed } from './NavBarStyled';
 
 
 const NavBar: React.FC = () => {
 
+
   return (
     <>
-      <Grid xs={12} container>
-        <NavBarStlyed >
-          <ul className='bodyNav'>
-            <li >
-              {
-                navigation.map((item => {
-                  return (
-                    <p key={item.key}>
-                      <Link to={item.url}>{item.label}</Link>
-                    </p>
-                  )
-                }
-                ))}
-              <div id='marker'></div>
-            </li>
-          </ul>
-        </NavBarStlyed>
+      <Grid className='bodyNav' xs={12} style={{ justifyContent: 'center', alignItems: 'center' }} container >
+        <ul style={{ justifyContent: 'center', alignItems: 'center' }}>
+          <li id='marker'>
+            {
+              navigation.map((item => {
+                return (
+                  <div key={item.key}>
+                    <button className='styleButton'>
+                      <Link style={{ color: '#fff', textDecoration: 'none' }} to={item.url}>{item.label}</Link>
+                    </button>
+                  </div>
+                )
+              }
+              ))}
+          </li>
+        </ul>
       </Grid>
     </>
   );
