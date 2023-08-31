@@ -15,7 +15,7 @@ const PratickCardSkill: React.FC = () => {
             <Container maxWidth='sm'>
                 <Grid xs={12} className='boxCard' container>
                     <Grid container item>
-                        <img style={{ position: 'absolute', bottom: '90px', borderRadius: '40px', width: '180px', height: '230px', padding: '25px 15px 25px 30px' }} src={'./image/Patrick.jpg'} alt='patrick'></img>
+                        <img style={{ position: 'absolute', bottom: '90px', borderRadius: '40px', width: '180px', height: '230px', padding: '25px 15px 25px 30px' }} src={'./image/Patrick.png'} alt='patrick'></img>
                     </Grid>
                     <Grid container item style={{
                         marginTop: '15px',
