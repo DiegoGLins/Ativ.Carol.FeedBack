@@ -4,7 +4,9 @@ import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import { NavBarStlyed } from "./NavBarStyled";
 
-interface NavBarProps {}
+interface NavBarProps {
+  title: string;
+}
 
 const NavBar: React.FC<NavBarProps> = ({ title }) => {
   return (
