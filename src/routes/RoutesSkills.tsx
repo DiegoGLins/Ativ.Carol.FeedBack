@@ -40,8 +40,9 @@ const router = createBrowserRouter([
 
 ])
 
-const RoutesSkills: React.FC = () => {
-    return <RouterProvider router={router} />
-}
 
-export default RoutesSkills
+const RoutesSkill: React.FC = () => {
+    return <RouterProvider router={router} />;
+};
+
+export default RoutesSkill;
