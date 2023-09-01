@@ -6,6 +6,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import NavBar from '../components/NavBar';
 
 
 const PratickCardSkill: React.FC = () => {
@@ -13,7 +14,8 @@ const PratickCardSkill: React.FC = () => {
     return (
         <>
             <Container maxWidth='sm'>
-                <Grid xs={12} className='boxCard' container>
+                <NavBar />
+                <Grid xs={12} className='boxCard' container style={{ marginTop: '150px' }}>
                     <Grid container item>
                         <img style={{ position: 'absolute', bottom: '90px', borderRadius: '40px', width: '180px', height: '230px', padding: '25px 15px 25px 30px' }} src={'./image/Patrick.png'} alt='patrick'></img>
                     </Grid>
