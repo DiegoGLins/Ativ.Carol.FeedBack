@@ -15,7 +15,7 @@ const Paragrafo: React.FC<ParagrafoProps> = ({
     <div
       style={{ display: "Flex", flexDirection: "column", alignItems: "center" }}
     >
-      <h1 style={{ color: "white", fontSize: "5rem" }}>{titulo}</h1>
+      <h1 style={{ color: "white", fontSize: "5rem", paddingTop: '70px' }}>{titulo}</h1>
       <p>{conteudo}</p>
       {children}
     </div>
