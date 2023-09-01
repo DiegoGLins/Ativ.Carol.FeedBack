@@ -1,17 +1,15 @@
-import { cardsArray } from "../components/Card/cardsArray";
-
 interface NavigationType {
-    url: string;
-    label: string;
-    key: number;
+  url: string;
+  label: string;
+  key: number;
 }
 
-
 export const navigation: NavigationType[] = [
-    { url: '/igor', label: 'IGOR', key: cardsArray.length + 1 },
-    { url: '/alexandre', label: 'ALEXANDRE', key: cardsArray.length + 1 },
-    { url: '/diego', label: 'DIEGO', key: cardsArray.length + 1 },
-    { url: '/jefferson', label: 'JEFFERSON', key: cardsArray.length + 1 },
-    { url: '/misael', label: 'MISAEL', key: cardsArray.length + 1 },
-    { url: '/patrick', label: 'PATRICK', key: cardsArray.length + 1 },
-]
+  { url: '/', label: 'HOME', key: 1 },
+  { url: '/igor', label: 'IGOR', key: 2 },
+  { url: '/alexandre', label: 'ALEXANDRE', key: 3 },
+  { url: '/diego', label: 'DIEGO', key: 4 },
+  { url: '/jefferson', label: 'JEFFERSON', key: 5 },
+  { url: '/misael', label: 'MISAEL', key: 6 },
+  { url: '/patrick', label: 'PATRICK', key: 7 },
+];

@@ -11,29 +11,28 @@ h1 {
 
 body {
   background-color: #1b1a1d;
-  color: '#fff';
   min-height: 100vh;
   min-width: 100vw;
   margin: 0;
   padding: 0;
-  display: flex;
   justify-content: center;
-  align-items: center;
   position: relative;
+  align-items: center;
 }
 
 .boxCard {
   box-sizing: border-box;
   position: relative;
-  display: flex;
   color: #fff;
-  /* padding: 20px 25px 0px; */
   background-color: #1b1a1d;
-  width: 700px;
-  height: 380px;
+  max-width: 400px;
+  max-height: 380px;
   border-radius: 16px;
   justify-content: center;
+  display: 'flex';
+  text-align: center;
   align-items: center;
+
 }
 
 .boxCard::before, .boxCard::after {
@@ -47,41 +46,20 @@ body {
   background-size: 300%;
   border-radius: 16px;
   animation: AnimationBorder 8s linear infinite;
-
+  display: 'flow';
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .boxCard::after {
-  filter: blur(50px)
+  filter: blur(50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.star {
-  font-size: 22px;
-  animation: AnimationStar 120ms infinite;
-  /* animation: calc(1%); */
-}
-
-@keyframes AnimationStar {
-  0% {
-    transform: rotate(20deg);
-    animation-direction: normal;
-    animation: 50ms infinite
-  }
-
-  30% {
-    transform: rotate(60deg);
-    animation: 150ms infinite
-  }
-
-  70% {
-    transform: rotate(90deg);
-    animation: 200ms infinite
-  }
-
-  100% {
-    transform: rotate(300deg);
-    animation: 0ms infinite
-  }
-}
 
 
 @keyframes AnimationBorder {
@@ -98,75 +76,78 @@ body {
 
 .bodyNav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  /* min-width: 100vw; */
   background-color: #1b1a1d;
-  height: 49px;
+  height: 100%;
+  width: 100%;
   box-sizing: border-box;
-
+  padding: 20px 0px 0px;
+  margin: 0px;
 }
 
 ul {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-radius: 10px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
-
+  margin-top: 10px;
+  opacity: 0.65;
 }
 
-ul li {
-  list-style: none;
-}
 
-ul li p {
+ul li a {
   position: relative;
-  color: #fff;
   text-decoration: none;
+  z-index: 1000;
   display: inline-block;
   padding: 20px 30px;
   z-index: 1000;
-  pointer-events: none;
-  opacity: 0.25;
-  transition: 0.25s
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
 }
 
 
-ul li {
-  position: relative;
-  color: #fff;
-  text-decoration: none;
-  display: inline-flex;
-  padding: 20px 30px;
-  z-index: 1000;
+ul li div a {
+  font-size: 1.2em;
+  pointer-events: none;
+  transition: 0.25s;
   backdrop-filter: blur(15px);
 }
 
-ul li:hover {
-  opacity: 1;
+.styleButton {
+  background: transparent;
 }
 
-#marker {
-  position: absolute;
-  top: 0;
-  transition: 0.5s;
-  z-index: 1;
-}
 
-#marker::before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(50%);
-  width: 50px;
-  height: 40px;
-  border-radius: 8px;
+.styleButton:hover {
   background: #5da6ff;
   box-shadow: 0 0 15px #5da6ff,
     0 0 30px #5da6ff,
     0 0 45px #5da6ff,
+    0 0 60px #5da6ff;
+}
+
+
+ul li {
+  display: flex;
+  list-style: none;
+}
+
+ul li:hover div a {
+  opacity: 1;
+}
+
+#marker {
+  display: inline-flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+  z-index: 1;
+  content: '';
+  border-radius: 8px;
+  background: #000000;
+  box-shadow: 0 0 45px #5da6ff,
+    0 0 20px #5da6ff,
+    0 0 35px #5da6ff,
     0 0 60px #5da6ff
 }
