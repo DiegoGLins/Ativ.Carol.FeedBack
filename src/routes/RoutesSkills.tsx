@@ -1,12 +1,12 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Diego from "../pages/Diego";
-import Alexandre from "../pages/Alexandre";
-import Igor from "../pages/Igor";
-import Jefferson from "../pages/Jefferson";
-import Misael from "../pages/Misael";
-import Patrick from "../pages/Patrick";
 import Home from "../pages/Home";
 import DefaultLayout from "../layout/DefaultLayout";
+import AlexandreCardSkill from "../pages/Alexandre";
+import DiegoCardSkill from "../pages/Diego";
+import IgorCardSkill from "../pages/Igor";
+import JeffersonCardSkill from "../pages/Jefferson";
+import MisaelCardSkill from "../pages/Misael";
+import PratickCardSkill from "../pages/Patrick";
 
 const router = createBrowserRouter([
   {
@@ -15,27 +15,27 @@ const router = createBrowserRouter([
   },
   {
     path: "/diego",
-    element: <DefaultLayout children={<Diego />} />,
+    element: <DefaultLayout children={<DiegoCardSkill />} />,
   },
   {
     path: "/alexandre",
-    element: <DefaultLayout children={<Alexandre />} />,
+    element: <DefaultLayout children={<AlexandreCardSkill />} />,
   },
   {
     path: "/patrick",
-    element: <DefaultLayout children={<Patrick />} />,
+    element: <DefaultLayout children={<PratickCardSkill />} />,
   },
   {
     path: "/jefferson",
-    element: <DefaultLayout children={<Jefferson />} />,
+    element: <DefaultLayout children={<JeffersonCardSkill />} />,
   },
   {
     path: "/misael",
-    element: <DefaultLayout children={<Misael />} />,
+    element: <DefaultLayout children={<MisaelCardSkill />} />,
   },
   {
     path: "/igor",
-    element: <DefaultLayout children={<Igor />} />,
+    element: <DefaultLayout children={<IgorCardSkill />} />,
   },
 ]);
 

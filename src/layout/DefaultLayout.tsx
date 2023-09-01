@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../components/NavBar/NavBar";
+import NavBar from "../components/NavBar";
 import Wrapper from "../components/Wrapper";
 
 interface DefaultLayoutProps {
@@ -9,7 +9,7 @@ interface DefaultLayoutProps {
 const DefaultLayout: React.FC<DefaultLayoutProps> = ({ children }) => {
   return (
     <>
-      <NavBar title="Atividade Feedback" />
+      <NavBar />
       <Wrapper>{children}</Wrapper>
     </>
   );

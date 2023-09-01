@@ -1,29 +1,27 @@
 import { navigation } from "../../config/navigation";
-import {} from "../../index.css";
+import { } from "../../index.css";
 import { Link } from "react-router-dom";
-import { NavBarStlyed } from "./NavBarStyled";
 
-interface NavBarProps {
-  title: string;
-}
 
-const NavBar: React.FC<NavBarProps> = ({ title }) => {
+const NavBar = () => {
+
+
   return (
-    <>
-      <NavBarStlyed>
-        <div>
-          <h1>{title}</h1>
-        </div>
-        {navigation.map((item) => {
-          return (
-            <p key={item.key}>
-              <Link to={item.url}>{item.label}</Link>
-            </p>
-          );
-        })}
-      </NavBarStlyed>
-    </>
+    <div className='bodyNav' style={{ justifyContent: 'center', alignItems: 'center' }}  >
+      <ul style={{ justifyContent: 'center', alignItems: 'center' }}>
+        <li id='marker'>
+          {
+            navigation.map((item => {
+              return (
+                <Link key={item.key} className='styleButton' style={{ color: '#fff', textDecoration: 'none' }} to={item.url}>{item.label}
+                </Link>
+              )
+            }
+            ))}
+        </li>
+      </ul>
+    </div>
   );
-};
+}
 
 export default NavBar;
