@@ -6,7 +6,6 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import NavBar from '../components/NavBar/NavBar';
 
 const DiegoCardSkill: React.FC = () => {
 
@@ -14,7 +13,6 @@ const DiegoCardSkill: React.FC = () => {
   return (
     <>
       <Container maxWidth='sm'>
-        <NavBar />
         <Grid xs={12} className='boxCard' container style={{ marginTop: '150px' }}>
           <Grid container item>
             <img style={{ position: 'absolute', bottom: '90px', borderRadius: '40px', width: '180px', height: '230px', padding: '25px 15px 25px 30px' }} src={'./image/Diego.jpg'} alt='Diego'></img>
