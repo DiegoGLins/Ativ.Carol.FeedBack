@@ -50,7 +50,7 @@ const IgorCardSkill: React.FC = () => {
                   <Typography>{"1º Soft Skill"}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography>**</Typography>
+                  <Typography>*Flexível</Typography>
                 </AccordionDetails>
               </Accordion>
               <Accordion style={{ marginBottom: '10px', color: '#fff', borderTopStyle: 'groove', borderStartStartRadius: '30px', borderEndEndRadius: '30px', backgroundColor: 'transparent' }}>
@@ -62,7 +62,7 @@ const IgorCardSkill: React.FC = () => {
                   <Typography>{"2º Soft Skill"}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography>**</Typography>
+                  <Typography>*Inteligente</Typography>
                 </AccordionDetails>
               </Accordion>
               <Accordion style={{ color: '#fff', borderTopStyle: 'groove', borderStartStartRadius: '30px', borderEndEndRadius: '30px', backgroundColor: 'transparent' }}>
@@ -74,7 +74,7 @@ const IgorCardSkill: React.FC = () => {
                   <Typography>{"3º Soft Skill"}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography>**</Typography>
+                  <Typography>*Persistente</Typography>
                 </AccordionDetails>
               </Accordion>
             </Grid>
