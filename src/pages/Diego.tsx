@@ -7,20 +7,20 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const DiegoCardSkill: React.FC = () => {
 
+const DiegoCardSkill: React.FC = () => {
 
   return (
     <>
       <Container maxWidth='sm'>
-        <Grid xs={12} className='boxCard' container style={{ marginTop: '150px' }}>
-          <Grid container item>
-            <img style={{ position: 'absolute', bottom: '90px', borderRadius: '40px', width: '180px', height: '230px', padding: '25px 15px 25px 30px' }} src={'./image/Diego.jpg'} alt='Diego'></img>
+        <Grid xs={12} className='boxCard' container style={{ marginTop: '250px' }}>
+          <Grid container item style={{ position: 'absolute', marginBlockEnd: '280px' }}>
+            <img style={{ position: 'absolute', borderRadius: '40px', width: '180px', height: '230px', padding: '5px 15px 20px 30px', marginBlockEnd: '240px', marginBlockStart: '535px', marginInlineEnd: '370px' }} src={'./image/Diego.jpg'} alt='Diego'></img>
           </Grid>
           <Grid container item style={{
-            marginTop: '15px',
+            marginTop: '5px',
             position: 'relative',
-            width: '650px', padding: '30px 50px 118px 200px', justifyContent: 'flex-start', alignItems: 'flex-start', overflow: 'hidden'
+            width: '650px', padding: '30px 50px 58px 200px', justifyContent: 'flex-start', alignItems: 'flex-start', overflow: 'hidden'
           }}>
             <Grid item style={{
               fontFamily: 'sans-serif',
@@ -41,7 +41,7 @@ const DiegoCardSkill: React.FC = () => {
               fontStyle: 'normal', textAlign: 'start',
             }}>
 
-              <Accordion style={{ marginBottom: '10px', color: '#fff', borderTopStyle: 'ridge', borderStartStartRadius: '30px', borderEndEndRadius: '30px', backgroundColor: 'transparent' }}>
+              <Accordion style={{ marginBottom: '10px', position: 'relative', color: '#fff', borderTopStyle: 'ridge', borderStartStartRadius: '30px', borderEndEndRadius: '30px', backgroundColor: 'transparent' }}>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon style={{ color: 'blue' }} />}
                   aria-controls="panel1a-content"
