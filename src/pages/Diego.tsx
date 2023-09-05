@@ -15,12 +15,12 @@ const DiegoCardSkill: React.FC = () => {
       <Container maxWidth='sm'>
         <Grid xs={12} className='boxCard' container style={{ marginTop: '250px' }}>
           <Grid container item style={{ position: 'absolute', marginBlockEnd: '280px' }}>
-            <img style={{ position: 'absolute', borderRadius: '40px', width: '180px', height: '230px', padding: '5px 15px 20px 30px', marginBlockEnd: '240px', marginBlockStart: '535px', marginInlineEnd: '370px' }} src={'./image/Diego.jpg'} alt='Diego'></img>
+            <img style={{ position: 'relative', borderRadius: '25px', width: '180px', height: '230px', marginBlockEnd: '240px', marginBlockStart: '535px', marginInlineEnd: '370px' }} src={'./image/Diego.jpg'} alt='Diego' />
           </Grid>
           <Grid container item style={{
             marginTop: '5px',
             position: 'relative',
-            width: '650px', padding: '30px 50px 58px 200px', justifyContent: 'flex-start', alignItems: 'flex-start', overflow: 'hidden'
+            width: '650px', padding: '30px 40px 58px 240px', justifyContent: 'center', alignItems: 'flex-start', overflow: 'hidden'
           }}>
             <Grid item style={{
               fontFamily: 'sans-serif',
@@ -32,7 +32,7 @@ const DiegoCardSkill: React.FC = () => {
                 <p className='star'>{'\u2B50'}</p>
                 <p>{'DIEGO'}</p>
               </div>
-              <Divider style={{ border: '#fff solid 1px', marginTop: '10px', marginBottom: '20px', width: '300px' }} />
+              <Divider style={{ border: '#fff solid 1px', marginTop: '10px', marginBottom: '20px', width: '320px' }} />
             </Grid>
             <Grid item style={{
               width: '100%',
