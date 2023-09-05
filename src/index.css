@@ -256,7 +256,7 @@ ul li {
   list-style: none;
 }
 
-ul li:hover div a {
+ul li div a:hover {
   opacity: 1;
 }
 
