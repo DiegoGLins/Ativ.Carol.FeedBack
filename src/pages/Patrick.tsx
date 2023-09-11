@@ -62,7 +62,7 @@ const PratickCardSkill: React.FC = () => {
                   <Typography>{"2º Soft Skill"}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography>*Raciocínio</Typography>
+                  <Typography>*Raciocínio rápido</Typography>
                 </AccordionDetails>
               </Accordion>
               <Accordion style={{ color: '#fff', borderTopStyle: 'groove', borderStartStartRadius: '30px', borderEndEndRadius: '30px', backgroundColor: 'transparent' }}>
