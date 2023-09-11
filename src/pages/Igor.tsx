@@ -15,7 +15,7 @@ const IgorCardSkill: React.FC = () => {
       <Container maxWidth='sm'>
         <Grid xs={12} className='boxCard' container style={{ marginTop: '250px' }}>
           <Grid container item style={{ position: 'absolute', marginBlockEnd: '280px' }}>
-            <img style={{ position: 'relative', borderRadius: '25px', width: '180px', height: '230px', marginBlockEnd: '240px', marginBlockStart: '535px', marginInlineEnd: '370px' }} src={'./image/Igor.jpg'} alt='Igor' />
+            <img style={{ position: 'relative', borderRadius: '25px', width: '180px', height: '230px', marginBlockEnd: '240px', marginBlockStart: '535px', marginInlineEnd: '315px' }} src={'./image/Igor.jpg'} alt='Igor' />
           </Grid>
           <Grid container item style={{
             marginTop: '5px',
@@ -32,7 +32,7 @@ const IgorCardSkill: React.FC = () => {
                 <p className='star'>{'\u2B50'}</p>
                 <p>{'IGOR'}</p>
               </div>
-              <Divider style={{ border: '#fff solid 1px', marginTop: '10px', marginBottom: '20px', width: '320px' }} />
+              <Divider style={{ border: '#fff solid 1px', marginTop: '10px', marginBottom: '20px', width: '268px' }} />
             </Grid>
             <Grid item style={{
               width: '100%',
