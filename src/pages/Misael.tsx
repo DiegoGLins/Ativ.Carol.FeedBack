@@ -15,7 +15,7 @@ const MisaelCardSkill: React.FC = () => {
       <Container maxWidth='sm'>
         <Grid xs={12} className='boxCard' container >
           <Grid container item style={{ position: 'absolute' }}>
-            <img style={{ position: 'relative', borderRadius: '25px', width: '180px', height: '230px', marginInlineEnd: '315px' }} src={'./image/Misael.jpg'} alt='Misael' />
+            <img style={{ position: 'relative', borderRadius: '25px', width: '180px', height: '230px', marginInlineStart: '32px' }} src={'./image/Misael.jpg'} alt='Misael' />
           </Grid>
           <Grid container item style={{
             marginTop: '5px',
