@@ -2,8 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
 }
 
 h1 {
@@ -64,8 +62,9 @@ body {
   margin: 0;
   padding: 0;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   display: flex;
+  padding-bottom: 100px;
 }
 
 .boxHome {
@@ -87,10 +86,10 @@ body {
       #060606, #060606, #06060675, #430882, #430882, #430882, );
   z-index: 2;
   display: flex;
-  z-index: 2;
   inset: 6px;
   border-radius: 8px;
-
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -200,15 +199,10 @@ body {
 }
 
 .bodyNav {
-  display: flex;
-  bottom: 360px;
   background-color: transparent;
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  margin: 0px;
-  position: relative;
-  top: -190px;
 }
 
 ul {
