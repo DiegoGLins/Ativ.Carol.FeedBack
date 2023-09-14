@@ -1,5 +1,3 @@
-
-
 import RoutesSkills from './routes/RoutesSkills'
 
 function App() {
