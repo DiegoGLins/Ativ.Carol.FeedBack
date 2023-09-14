@@ -56,17 +56,15 @@ h1 {
 }
 
 body {
-  background-image: url(./assets/background.png);
-  background-image: cover;
+  background-image: url('./assets/background.png');
   background-repeat: no-repeat;
-  max-height: 100vh;
-  max-width: 100vw;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
   padding: 0;
   justify-content: center;
-  position: relative;
   align-items: center;
-  position: relative;
   display: flex;
 }
 
@@ -75,11 +73,11 @@ body {
   width: 960px;
   height: 360px;
   display: flex;
-  margin-top: 130px;
   background: transparent;
   overflow: hidden;
   border-radius: 8px;
   backdrop-filter: blur(5px);
+
 }
 
 .boxCenter {
@@ -156,6 +154,7 @@ body {
   display: 'flex';
   text-align: center;
   align-items: center;
+  margin-top: 30px;
 }
 
 
@@ -176,6 +175,7 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
 
 .boxCard::after {
   filter: blur(50px);
@@ -206,8 +206,9 @@ body {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  padding: 20px 0px 0px;
   margin: 0px;
+  position: relative;
+  top: -190px;
 }
 
 ul {
