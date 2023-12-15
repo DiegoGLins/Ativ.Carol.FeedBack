@@ -1,4 +1,5 @@
-Acesse nossa aplicação através do link: https://ativ-carol-feed-back.vercel.app/
+Nossa aplicação é uma atividade proposta pela nossa mentora de carreira Carolina di Lorenzo na Growdev. A aplicação traz as principais soft-skills
+de cada um dos participantes da equipe. Pode ser acessada de qualquer dispositivo desktop ou mobile através do link: https://ativ-carol-feed-back.vercel.app/
 
 <div style={display:'flex', alignItems: 'center'}>
 <p align='center'>
